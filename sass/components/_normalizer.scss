@@ -1,0 +1,40 @@
+body{
+  font-family: $mainFont;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p{
+  margin:0;
+}
+
+p,
+ul{
+  padding:0;
+}
+
+img{
+  display:block;
+}
+
+.no-decoration{
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.container{
+  width: 1200px;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.section{
+  padding-top: 94px;
+  padding-bottom: 94px;
+}

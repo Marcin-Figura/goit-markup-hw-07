@@ -1,0 +1,107 @@
+.logo {
+  font-size: 26px;
+  line-height: 1.2;
+  color: $fontMainColor;
+  font-family: $secondaryFont;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+
+  &__first {
+    color: $mainColor;
+  }
+}
+
+.contact-link {
+  letter-spacing: 0.02em;
+  line-height: 1.14;
+  text-decoration: none;
+  font-family: $mainFont;
+  font-weight: 500;
+  font-size: 14px;
+  color: $fontSecondaryColor;
+  display: flex;
+  align-items: center;
+  fill: $fontSecondaryColor;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $mainColor;
+    fill: $mainColor;
+  }
+
+  &--marginrl {
+    margin-left: auto;
+    margin-right: 50px;
+  }
+}
+
+.contact-link__item {
+  margin-right: 10px;
+}
+
+.hero__banner,
+.about-us__tittle {
+  text-transform: uppercase;
+}
+
+.header {
+  color: $fontMainColor;
+
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    margin-top: 24px;
+    margin-right: 93px;
+    margin-bottom: 25px;
+    margin-left: 0;
+  }
+}
+
+.navigation {
+  border-bottom: 1px solid #ececec;
+}
+
+.navigation-list {
+  display: flex;
+  align-items: center;
+  &__item {
+    margin-right: 46px;
+    &--no-marginr {
+      margin-right: 0;
+    }
+  }
+  &__link {
+    position: relative;
+    letter-spacing: 0.02em;
+    line-height: 1.14;
+    text-decoration: none;
+    font-family: $mainFont;
+    font-weight: 500;
+    font-size: 14px;
+    color: $fontMainColor;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      color: $mainColor;
+    }
+    &--active {
+      color: $mainColor;
+    }
+    &--active::after {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 4px;
+      background: $mainColor;
+      border-radius: 2px;
+      top: 45px;
+    }
+  }
+}

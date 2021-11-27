@@ -1,0 +1,88 @@
+.about-us {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    flex-basis: calc((100% - 90px) / 4);
+    padding-bottom: 30px;
+    margin-left: 30px;
+
+    &--margin-left {
+      margin-left: 0;
+    }
+  }
+
+  &__tittle,
+  &__description {
+    font-size: 14px;
+    letter-spacing: 0.03em;
+  }
+
+  &__tittle {
+    line-height: 1.88;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+
+  &__description {
+    line-height: 1.71;
+    color: $fontSecondaryColor;
+  }
+
+  &__banner {
+    margin: 94px auto 50px;
+    max-width: 353px;
+    font-size: 36px;
+    text-align: center;
+    line-height: 1.16;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+  }
+
+  &__gallery {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__gallery-item {
+    flex-basis: calc((100% - 60px) / 3);
+    position: relative;
+
+    &--margin-left {
+      margin-left: 30px;
+    }
+  }
+
+  &__caption-background {
+    position: absolute;
+    width: 370px;
+    height: 70px;
+    /*left: 215px;
+  top: 1435px;*/
+    background: rgba(47, 48, 58, 0.8);
+    bottom: 0;
+  }
+
+  &__photo-caption {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $neutralColor;
+    padding-top: 27px;
+  }
+
+  &__rectangle {
+    width: 270px;
+    height: 120px;
+    background: $teamBackgroundColor;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
