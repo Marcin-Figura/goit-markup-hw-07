@@ -170,7 +170,7 @@ img {
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("../images/background-hero.png");
+    url("./images/background-hero.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -503,7 +503,7 @@ img {
 .modal-form__policy-box:checked + .modal-form__policy-text::before {
   background-color: var(--main-color);
   border: none;
-  background-image: url("../images/check.svg");
+  background-image: url("./images/check.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
